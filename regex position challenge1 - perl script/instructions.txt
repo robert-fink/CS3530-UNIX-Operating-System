@@ -1,0 +1,24 @@
+Program name: position1.pl
+
+Given:
+my $string = "toy='truck' color='red' cat='purrdy' dogs='beagle' car='toyota' doggy='mut' apple='delicious' dog='shepherd' colour='blue'";
+
+Locate the property instances of dog, dogs, or doggy.
+Find the property value for the instance. That is, find what they are set equal to. This means finding what is in the '' after the = after dog, dogs, or doggy.
+Determine the start and end character positions for each instance.
+Determine the start and end character positions for each property value (the part in the '').
+
+For each found instance, print:
+<instance string> at <start>-<end> type <property value> at <start>-<end>
+
+Example output:
+dogs at 37-40 type beagle at 43-48
+doggy at 64-68 type mut at 71-73
+dog at 94-96 type shepherd at 99-106
+
+
+Follow this by doing the same thing for color and colour.
+
+Example output:
+color at 12-16 type red at 19-21
+colour at 109-114 type blue at 117-120

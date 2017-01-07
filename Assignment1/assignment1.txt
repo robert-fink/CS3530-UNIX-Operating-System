@@ -1,0 +1,27 @@
+1. Write a shell script that performs the following:
+
+- accepts a filename, either by prompt or parameter
+
+- checks to see if a file by that filename already exists in the current working directory
+
+- if file exists, copy the existing file to a new file of the same name, only with .bak and the current date appended to the name
+
+(eg myfile.txt becomes myfile.txt.bak09152016)
+
+- if the backup file already exists the script should ask if you want to replace it, and act accordingly
+
+
+
+2. Using the "select" menu creation system available to BASH scripts, create a small menu-driven calculator.
+
+Each function should take two parameters.
+
+Implement the following arithmetic as menu options: +, -, *, /, %
+
+
+
+You will be graded on the functionality of your scripts as well as choices of commands and understandability of your code and comments.
+
+You will submit your work as two separate text files, following this naming convention: cs3530_<pawprint>_assignment1_part1.txt
+
+cs3530_<pawprint>_assignment1_part2.txt

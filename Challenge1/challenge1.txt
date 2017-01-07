@@ -1,0 +1,5 @@
+1. What computer(s) do you own? Describe what you have if have something, and what you do with it.
+
+2. Have you ever installed/tried to install UNIX/Linux on your own computer?
+
+3. Rate your own familiarity with UNIX/Linux, as of today, on a 1-10 scale. Give some kind of qualifying statement that describes why you rate yourself that way.

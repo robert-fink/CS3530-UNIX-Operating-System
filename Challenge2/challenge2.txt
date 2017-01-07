@@ -1,0 +1,6 @@
+Download the files cities.csv, sensorLog.csv, and twitter_hacked_passwords.txt and be able to access them using the BASH command line.
+
+To prove that you have done this, tell me how many lines are contained in the file cities.csv. Hopefully you will use BASH commands to give you this info, and not the GUI applications. Resist the temptation to cheat!
+
+
+854 lines

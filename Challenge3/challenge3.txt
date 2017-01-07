@@ -1,0 +1,5 @@
+In your public_html space, create a webpage document (.html/.php/pl). What are the permissions you must remove before the webserver can no longer display the page?
+
+http://ec2-54-68-188-165.us-west-2.compute.amazonaws.com/ (Links to an external site.)
+
+chmod 640

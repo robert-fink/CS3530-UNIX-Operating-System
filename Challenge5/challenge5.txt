@@ -1,0 +1,9 @@
+Create a shell script that uses the curl command to retrieve the URLs for the top 10 movies (by US domestic box office gross receipts) on the Internet Movie Data Base website (imdb.com). At the very least, output a list of IMDB URLs to the screen.
+
+BONUS OBJECTIVE: parse out the following info to a text file, in columns-- movie title and year, release date, and run time.
+
+You will probably need to use grep and explore regular expressions (regex) to complete this task :)
+
+
+
+When submitting your work, name your file as follows: CS3530_<pawprint>_<lastname>_Challenge5.txt

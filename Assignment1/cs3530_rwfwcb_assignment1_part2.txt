@@ -1,0 +1,61 @@
+#! /bin/bash
+
+flag="y" #yes	#this flag allows a user to do more calculations if they choose to
+
+while [[ $flag = "y" ]] ; do
+	echo "------------"
+	echo " Calculator"
+	echo "------------"
+
+	Operations="+ - x /"
+	
+
+	echo "Press 1 for addition, 2 for subtraction, 3 for multiplication, and 4 for division"	
+	select op in $Operations; do
+		case $op in
+		+)
+			echo "Enter the first number"
+        		read n1
+			echo "Enter the second number"
+        		read n2
+			problem="$n1 + $n2 = "
+			result=`expr $n1 + $n2`
+			echo "$problem $result"
+			break ;;
+		-)
+                        echo "Enter the first number"
+                        read n1
+                        echo "Enter the second number"
+                        read n2
+                        problem="$n1 - $n2 = "
+                        result=`expr $n1 - $n2`
+                        echo "$problem $result"
+                        break ;;
+		x)
+                        echo "Enter the first number"
+                        read n1
+                        echo "Enter the second number"
+                        read n2
+                        problem="$n1 x $n2 = "
+                        result=`expr $n1 \* $n2`
+                        echo "$problem $result"
+                        break ;;
+		/)
+                        echo "Enter the first number"
+                        read n1
+                        echo "Enter the second number"
+                        read n2
+                        problem="$n1 / $n2 = "
+                        result=`expr $n1 / $n2`
+                        echo "$problem $result"
+                        break ;;
+	esac
+	done
+	
+	echo "Do you want to solve another problem? [y/n]"	#ask the user to do another calculation
+	read y
+	if [[ $y == "n" ]] ; then
+		flag="n"
+	fi
+
+done

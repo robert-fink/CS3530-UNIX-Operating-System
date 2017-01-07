@@ -1,0 +1,12 @@
+Write a program called datechecker.pl that takes a date as a parameter and does the following:
+
+Test if valid date based on the following formats. If the date is valid, print the date followed by " is valid."  Also, if the date is valid display the year from the date by printing "The year is " followed by the year.
+
+YYYY-MM-DD
+MM/DD/YYYY
+MM/DD/YY
+MON DD, YYYY
+
+Where:
+MM DD and YYYY are numbers
+MON is month represented as Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, or Dec

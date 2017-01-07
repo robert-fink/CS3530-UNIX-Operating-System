@@ -1,0 +1,16 @@
+Program name: registrant.pl
+
+Write a perl program that:
+- accepts a domain name as a command line parameter
+- runs the whois command and passes the domain name as a parameter to it
+- captures the output of the whois command
+- uses a regular expression with the output of whois to retrieve and display:
+- the registrant's name
+- the registrant's email address
+- the registrant's phone number
+
+Example run of the program:
+./registrant.pl dalemusser.com
+Dale Musser
++1.5738644230
+dalemusser@gmail.com

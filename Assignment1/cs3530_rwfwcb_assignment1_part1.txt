@@ -1,0 +1,47 @@
+#! /bin/bash
+
+#This script will get a filename as user input, if the file exists it asks the user if they want to create a backup file, if the backup file exists they can overwrite it.
+
+echo "Enter a filename to search for..."
+
+read f1 	#get a filename as user input
+
+if [ -f $f1 ] ; then 	#if file exists true is returned
+	echo "File already exists, do you want to create a backup? [y/n]"
+	read a1
+	
+	if [ $a1 == "y" ] ; then 	#user selected yes, create backup
+		bakFile="$f1.bak$(date +%Y-%m-%d)"
+		
+		if [ -f $bakFile ] ; then	#returns true if the backup exists already
+			echo "Backup already exists, do you want to replace the backup file? [y/n]"
+			read a2
+
+			if [ $a2 == "y" ] ; then 	#replace the backup file
+				cp $f1 $bakFile
+				echo "Old backup file replaced with new backup file."
+				exit 0
+			elif [ $a2 == "n" ] ; then	#do not replace the backup file
+				echo "You chose not to replace the backup file with a newer backup"
+				exit 0
+			else
+				echo "Invalid entry. Correct usage [y/n]"
+				exit 1
+			fi
+		fi
+
+		cp $f1 $bakFile		#make a backup copy of file1 and appends bak + date to the file name
+		echo "Backup file created: $bakFile"
+
+	elif [ $a1 == "n" ] ; then
+		echo "No backup file created"
+	else
+		echo "Invalid entry. Correct usage [y/n]"
+
+	fi	  
+else
+	echo "File does not exist"
+fi
+
+
+exit 0

@@ -1,0 +1,7 @@
+Write a script that prints the current date, your username, and the name of your login shell.
+
+The script should also print out the uptime of the system, and a list of the users currently logged into the system.
+
+Use the echo command to output this text to the terminal.
+
+Paste your final, working script into the text box and click 'submit' to submit your work.

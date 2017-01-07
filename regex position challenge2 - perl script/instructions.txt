@@ -1,0 +1,24 @@
+Program name: position2.pl
+
+Given:
+my $string = "toy='truck' color='red' cat='purrdy' dog='beagle' car='toyota' dog='mut' apple='delicious' dog='shepherd' color='blue'";
+my @properties = ("dog", "color", "toy", "apple");
+
+For each property in the array of properties (do this in a loop):
+
+Locate the property instances.
+Find the property value for the instance.
+Determine the start and end character positions for each instance.
+Determine the start and end character positions for each property value (the part in the '').
+
+For each found instance, print:
+<instance string> at <start>-<end> type <property value> at <start>-<end>
+
+Example output:
+dog at 37-39 type beagle at 42-47
+dog at 63-65 type mut at 68-70
+dog at 91-93 type shepherd at 96-103
+color at 12-16 type red at 19-21
+color at 106-110 type blue at 113-116
+toy at 0-2 type truck at 5-9
+apple at 73-77 type delicious at 80-88

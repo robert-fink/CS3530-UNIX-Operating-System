@@ -1,0 +1,8 @@
+Write a perl program called pageinfo.pl that loads an html document from a file and does the following:
+
+- find and display the title of the page. The title is in <title></title> tags.
+- find and display a list of words/phrases/sentences that are wrapped in <strong></strong> tags. Display the number of items found after displaying the list.
+- find and display a list of titles contained in header tags. Display the number of items found after displaying the list.  Header tags are <h1></h1> through <h6></h6>
+- put an empty line between each of the above so they form separated sections in the output.
+
+Test the above using the macrumors.html file.
